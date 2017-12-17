@@ -1,50 +1,61 @@
-# HTML Cheat Sheet
-A reminder of HTML elements.
+# HTML بالعربي
 
-## Table of Contents
- - [Minimal page](#minimal-page)
- - [Head](#head)
- - [Text content](#text-content)
-   - [Headings](#headings)
-   - [Paragraphs](#paragraphs)
-   - [Formatting](#formatting)
-   - [Quotes](#quotes)
- - [Content](#content)
-   - [Links](#links)
-   - [Images](#images)
-   - [Blocks](#blocks)
- - [Lists](#lists)
-   - [Unordered list](#unordered-list)
-   - [Ordered list](#ordered-list)
-   - [Definition list](#definition-list)
- - [Tables](#tables)
-   - [Basic table](#basic-table)
-   - [Advanced table](#advanced-table)
- - [Forms](#forms)
- - [HTML5 Semantic](#html5-semantic)
-   - [Page layout](#page-layout)
-   - [New elements](#new-elements)
+مرجع مبسّط باللغة العربية للـ HTML.
 
-## Minimal page
+## فهرس المحتويات
+
+* [صفحة مبدئية](#minimal-page)
+* [رأس الصفحة](#head)
+* [تنسيقات النصوص](#text-content)
+  * [العناوين](#headings)
+  * [الفقرات](#paragraphs)
+  * [التنسيقات](#formatting)
+  * [الإقتباسات](#quotes)
+* [المحتوى](#content)
+  * [الروابط](#links)
+  * [الصور](#images)
+  * [الكتل](#blocks)
+* [القوائم](#lists)
+  * [القوائم الغير مرتبة](#unordered-list)
+  * [القوائم المرتبة](#ordered-list)
+  * [قوائم التعريف](#definition-list)
+* [الجداول](#tables)
+  * [الجداول البسيطة](#basic-table)
+  * [الجداول المتقدمة](#advanced-table)
+* [النماذج](#forms)
+* [أوسمة HTML5](#html5-semantic)
+  * [تخطيط الصفحة](#page-layout)
+  * [العناصر الجديدة](#new-العنصرs)
+
+## صفحة مبدئية مع دعم للغة العربية واتجاه من اليمين لليسار
+
 ```html
 <!DOCTYPE html>
-<html>
+<html lang="ar" dir="rtl">
     <head>
         <meta charset="UTF-8">
-        <title>Title</title>
+        <title>عنوان الصفحة</title>
     </head>
     <body>
-        <!-- content here -->
+        <!-- محتوى الصفحة -->
     </body>
 </html>
 ```
 
-## Head
+## رأس الصفحة
+
 ```html
 <head>
-    <title>Title</title>
-    <base href="base-url" />
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>عنوان الصفحة</title>
+    <base href="base-url">
+    <meta name="keywords" content="keywords">
+    <meta name="description" content="description">
+    <meta name="author" content="name">
+    <meta http-equiv="refresh" content="10">
+    <link href="style.css" rel="stylesheet" type="text/css">
     <style type="text/css">
         /* CSS code */
     </style>
@@ -52,17 +63,12 @@ A reminder of HTML elements.
     <script>
         // Javascript code
     </script>
-    <meta charset="UTF-8">
-    <meta name="keywords" content="keywords">
-    <meta name="description" content="description">
-    <meta name="author" content="name">
-    <meta http-equiv="refresh" content="10">
 </head>
 ```
 
-tag | element
+الوسم | العنصر
 --- | ---
-**title** | page title
+**title** | عنوان الصفحة الظاهر على تبويب مستعرض الإنترنت
 **base** | base url for all links
 **link** | link to external source
 **style** | CSS inside HTML page
@@ -70,43 +76,45 @@ tag | element
 **meta** | metadata
 **meta** *http-equiv*="refresh" *content*="10" | auto-refresh page in 10s
 
+## تنسيقات النصوص
 
-## Text content
+### العناوين
 
-### Headings
 ```html
-<h1>Main heading</h1>
-<!-- etc -->
-<h6>Level-6 heading</h6>
+<h1>عنوان رئيسي</h1>
+<!-- إلخ -->
+<h6>عنوان من الدرجة السادسة</h6>
 ```
 
-tag | element
+الوسم | العنصر
 --- | ---
-**h1** | main heading
-**h6** | least important heading
+**h1** | عنوان رئيسي
+**h6** | عنوان أقل أهمية
 
-### Paragraphs
+### الفقرات
+
 ```html
-<p>Paragraph.<br/>
-Other line.</p>
-<p>Other paragraph.</p>
+<p>فقرة.<br/>
+سطر جديد.</p>
+<p>فقرة أخرى.</p>
 <hr/>
-<p>See the line above.</p>
+<p>لاحظ الخط الأفقي فوق هذا العنصر.</p>
 ```
 
-tag | element
+الوسم | العنصر
 --- | ---
-**p** | paragraph
-**br** | line break
-**hr** | horizontal line
+**p** | فقرة
+**br** | سطر جديد
+**hr** | خط أفقي
 
-### Formatting
+### التنسيقات
+
 ```html
-<em>Formatting</em> is <strong>important</strong> !
-(a+b)<sup>2</sup> = a<sup>2</sup> + b<sup>2</sup> + 2ab
+<em>التنسيقات</em> في صفحات الويب <strong>مهمة للغاية</strong> !
+(س+ع)<sup>٢</sup> = س<sup>٢</sup> + ع<sup>٢</sup> + ٢سع
 ```
 
-tag | element
+الوسم | العنصر
 --- | ---
 **sub** | subscript
 **sup** | superscript
@@ -117,7 +125,8 @@ tag | element
 **i** | italic
 **b** | bold
 
-### Quotes
+### الإقتباسات
+
 ```html
 <cite>This book</cite> was written by this author.
 <q cite="url">quotation</q>
@@ -127,16 +136,17 @@ Lorem ipsum
 </blockquote>
 ```
 
-tag | element
+الوسم | العنصر
 --- | ---
 **cite** | title of a work
 **q** | inline quotation
 **blockquote** | quotation
 
 
-## Content
+## المحتوى
 
-### Links
+### الروابط
+
 ```html
 <a href="url">link</a>
 <a href="url" target=_blank>open in a new window</a>
@@ -145,34 +155,36 @@ tag | element
 <h2 id="comments">comments</h2>
 ```
 
-tag | element
+الوسم | العنصر
 --- | ---
 **a** | hyperlink
 
-### Images
+### الصور
+
 ```html
-<img src="image.png" alt="description" width="300" height="200" />
+<img src="image.png" alt="description" width="300" height="200">
 ```
 
-tag | element
+الوسم | العنصر
 --- | ---
 **img** | image
 
-### Blocks
+### الكتل
+
 ```html
 <div>block</div>
 <span>inline</span>
 ```
 
-tag | element
+الوسم | العنصر
 --- | ---
-**div** | block-level element
-**span** | inline element
+**div** | block-level العنصر
+**span** | inline العنصر
 
+## القوائم
 
-## Lists
+### القوائم الغير مرتبة
 
-### Unordered list
 ```html
 <ul>
     <li>item</li>
@@ -181,12 +193,13 @@ tag | element
 </ul>
 ```
 
-tag | element
+الوسم | العنصر
 --- | ---
 **ul** | unordered list
 **li** | list item
 
-### Ordored list
+### القوائم المرتبة
+
 ```html
 <ol>
     <li>first</li>
@@ -195,12 +208,13 @@ tag | element
 </ol>
 ```
 
-tag | element
+الوسم | العنصر
 --- | ---
 **ol** | ordered list
 **li** | list item
 
-### Definition list
+### قوائم التعريف
+
 ```html
 <dl>
     <dt>term</dt><dd>definition</dd>
@@ -209,16 +223,16 @@ tag | element
 </dl>
 ```
 
-tag | element
+الوسم | العنصر
 --- | ---
 **dl** | definition list
 **dt** | term
 **dd** | definition
 
+## الجداول
 
-## Tables
+### الجداول البسيطة
 
-### Basic table
 ```html
 <table>
 <tr>
@@ -236,20 +250,21 @@ tag | element
 </table>
 ```
 
-tag | element
+الوسم | العنصر
 --- | ---
 **table** | table
 **tr** | table row
 **th** | table heading
 **td** | table cell
 
-### Advanced table
+### الجداول المتقدمة
+
 ```html
 <table>
 <caption>caption</caption>
 <colgroup>
-    <col span="2" style="..." />
-    <col style="..." />
+    <col span="2" style="...">
+    <col style="...">
 </colgroup>
 <thead>
     <tr>
@@ -280,7 +295,7 @@ tag | element
 </table>
 ```
 
-tag | element
+الوسم | العنصر
 --- | ---
 **caption** | caption
 **colgroup** | defines groups of columns
@@ -289,34 +304,34 @@ tag | element
 **tfoot** | groups footers together
 **tbody** | groups other rows
 
+## النماذج
 
-## Forms
 ```html
 <form action="url" method="post">
     <fieldset>
         <legend>Who are you ?</legend>
-        <label>Login :<input type="text" name="login" /></label><br/>
-        <label for="pswd">Password :</label><input type="password" name="password" id="pswd" /><br/>
-        <input type="radio" name="sex" value="male" />Male<br/>
-        <input type="radio" name="sex" value="female" />Female<br/>
+        <label>Login :<input type="text" name="login"></label><br/>
+        <label for="pswd">Password :</label><input type="password" name="password" id="pswd"><br/>
+        <input type="radio" name="sex" value="male">Male<br/>
+        <input type="radio" name="sex" value="female">Female<br/>
     </fieldset>
-    
+
     <label>Your favorite color : <select name="color">
         <option>red</option>
         <option>green</option>
         <option>blue</option>
     </select></label>
-    
-    <input type="checkbox" name="available" value="monday" />Monday<br/>
-    <input type="checkbox" name="available" value="tuesday" />Tuesday<br/>
-    
+
+    <input type="checkbox" name="available" value="monday">Monday<br/>
+    <input type="checkbox" name="available" value="tuesday">Tuesday<br/>
+
     <textarea name="comments" rows="10" cols="30" placeholder="Write your comments here"><textarea/>
-    
+
     <input type="submit" value="Button text">
 </form>
 ```
 
-tag | element
+الوسم | العنصر
 --- | ---
 **form** | form
 **label** | label for input
@@ -334,9 +349,10 @@ tag | element
 **textarea** | large text input
 
 
-## HTML5 Semantic
+## أوسمة HTML5
 
-### Page layout
+### تخطيط الصفحة
+
 ```html
 <header>My website</header>
 <nav>
@@ -372,7 +388,7 @@ Copyright notice
 </footer>
 ```
 
-tag | element
+الوسم | العنصر
 --- | ---
 **header** | header of document or section
 **footer** | footer of document or section
@@ -381,10 +397,11 @@ tag | element
 **aside** | aside content related to surrounding content
 **nav** | navigation links
 
-### New elements
+### العناصر الجديدة
+
 ```html
 <figure>
-    <img src="image.png" alt="figure 1" />
+    <img src="image.png" alt="figure 1">
     <figcaption>Figure 1</figcaption>
 </figure>
 
@@ -397,12 +414,14 @@ Downloading progress : <progress value="53" max="100"></progress>
 Disk space : <meter value="62" min="10" max="350"></meter>
 ```
 
-tag | element
+الوسم | العنصر
 --- | ---
 **figure** | an illustration
-**figcaption** | caption of a figure element
+**figcaption** | caption of a figure العنصر
 **details** | details that can be shown or hidden
-**summary** | visible heading of a details element
+**summary** | visible heading of a details العنصر
 **progress** | progress of a task
 **meter** | display a gauge
 **time** | machine-readable time indication
+
+</div>
