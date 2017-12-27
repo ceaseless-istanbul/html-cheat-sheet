@@ -1,6 +1,6 @@
 # HTML بالعربي
 
-مرجع مبسّط باللغة العربية للـ HTML.
+# مرجع مبسّط باللغة العربية للـ HTML. {#html}
 
 ## فهرس المحتويات
 
@@ -66,15 +66,15 @@
 </head>
 ```
 
-الوسم | العنصر
---- | ---
-**title** | عنوان الصفحة الظاهر على تبويب مستعرض الإنترنت
-**base** | base url for all links
-**link** | link to external source
-**style** | CSS inside HTML page
-**script** | Javascript code
-**meta** | metadata
-**meta** *http-equiv*="refresh" *content*="10" | auto-refresh page in 10s
+| الوسم | العنصر |
+| --- | --- |
+| **title** | عنوان الصفحة الظاهر على تبويب مستعرض الإنترنت |
+| **base** | base url for all links |
+| **link** | link to external source |
+| **style** | CSS inside HTML page |
+| **script** | Javascript code |
+| **meta** | metadata |
+| **meta** _http-equiv_="refresh" _content_="10" | auto-refresh page in 10s |
 
 ## تنسيقات النصوص
 
@@ -86,10 +86,10 @@
 <h6>عنوان من الدرجة السادسة</h6>
 ```
 
-الوسم | العنصر
---- | ---
-**h1** | عنوان رئيسي
-**h6** | عنوان أقل أهمية
+| الوسم | العنصر |
+| --- | --- |
+| **h1** | عنوان رئيسي |
+| **h6** | عنوان أقل أهمية |
 
 ### الفقرات
 
@@ -101,11 +101,11 @@
 <p>لاحظ الخط الأفقي فوق هذا العنصر.</p>
 ```
 
-الوسم | العنصر
---- | ---
-**p** | فقرة
-**br** | سطر جديد
-**hr** | خط أفقي
+| الوسم | العنصر |
+| --- | --- |
+| **p** | فقرة |
+| **br** | سطر جديد |
+| **hr** | خط أفقي |
 
 ### التنسيقات
 
@@ -114,16 +114,16 @@
 (س+ع)<sup>٢</sup> = س<sup>٢</sup> + ع<sup>٢</sup> + ٢سع
 ```
 
-الوسم | العنصر
---- | ---
-**sub** | subscript
-**sup** | superscript
-**em** | emphasize
-**strong** | important
-**mark** | highlighted
-**small** | small
-**i** | italic
-**b** | bold
+| الوسم | العنصر |
+| --- | --- |
+| **sub** | subscript |
+| **sup** | superscript |
+| **em** | emphasize |
+| **strong** | important |
+| **mark** | highlighted |
+| **small** | small |
+| **i** | italic |
+| **b** | bold |
 
 ### الإقتباسات
 
@@ -136,12 +136,11 @@ Lorem ipsum
 </blockquote>
 ```
 
-الوسم | العنصر
---- | ---
-**cite** | title of a work
-**q** | inline quotation
-**blockquote** | quotation
-
+| الوسم | العنصر |
+| --- | --- |
+| **cite** | title of a work |
+| **q** | inline quotation |
+| **blockquote** | quotation |
 
 ## المحتوى
 
@@ -155,9 +154,9 @@ Lorem ipsum
 <h2 id="comments">comments</h2>
 ```
 
-الوسم | العنصر
---- | ---
-**a** | hyperlink
+| الوسم | العنصر |
+| --- | --- |
+| **a** | hyperlink |
 
 ### الصور
 
@@ -165,9 +164,9 @@ Lorem ipsum
 <img src="image.png" alt="description" width="300" height="200">
 ```
 
-الوسم | العنصر
---- | ---
-**img** | image
+| الوسم | العنصر |
+| --- | --- |
+| **img** | image |
 
 ### الكتل
 
@@ -176,10 +175,10 @@ Lorem ipsum
 <span>inline</span>
 ```
 
-الوسم | العنصر
---- | ---
-**div** | block-level العنصر
-**span** | inline العنصر
+| الوسم | العنصر |
+| --- | --- |
+| **div** | block-level العنصر |
+| **span** | inline العنصر |
 
 ## القوائم
 
@@ -193,10 +192,10 @@ Lorem ipsum
 </ul>
 ```
 
-الوسم | العنصر
---- | ---
-**ul** | unordered list
-**li** | list item
+| الوسم | العنصر |
+| --- | --- |
+| **ul** | unordered list |
+| **li** | list item |
 
 ### القوائم المرتبة
 
@@ -208,10 +207,10 @@ Lorem ipsum
 </ol>
 ```
 
-الوسم | العنصر
---- | ---
-**ol** | ordered list
-**li** | list item
+| الوسم | العنصر |
+| --- | --- |
+| **ol** | ordered list |
+| **li** | list item |
 
 ### قوائم التعريف
 
@@ -223,11 +222,11 @@ Lorem ipsum
 </dl>
 ```
 
-الوسم | العنصر
---- | ---
-**dl** | definition list
-**dt** | term
-**dd** | definition
+| الوسم | العنصر |
+| --- | --- |
+| **dl** | definition list |
+| **dt** | term |
+| **dd** | definition |
 
 ## الجداول
 
@@ -250,12 +249,12 @@ Lorem ipsum
 </table>
 ```
 
-الوسم | العنصر
---- | ---
-**table** | table
-**tr** | table row
-**th** | table heading
-**td** | table cell
+| الوسم | العنصر |
+| --- | --- |
+| **table** | table |
+| **tr** | table row |
+| **th** | table heading |
+| **td** | table cell |
 
 ### الجداول المتقدمة
 
@@ -295,14 +294,14 @@ Lorem ipsum
 </table>
 ```
 
-الوسم | العنصر
---- | ---
-**caption** | caption
-**colgroup** | defines groups of columns
-**col** | defines column's properties
-**thead** | groups headings together
-**tfoot** | groups footers together
-**tbody** | groups other rows
+| الوسم | العنصر |
+| --- | --- |
+| **caption** | caption |
+| **colgroup** | defines groups of columns |
+| **col** | defines column's properties |
+| **thead** | groups headings together |
+| **tfoot** | groups footers together |
+| **tbody** | groups other rows |
 
 ## النماذج
 
@@ -331,23 +330,22 @@ Lorem ipsum
 </form>
 ```
 
-الوسم | العنصر
---- | ---
-**form** | form
-**label** | label for input
-**fieldset** | group inputs together
-**legend** | legend for fieldset
-**input** type="*text*" | text input
-**input** type="*password*" | password input
-**input** type="*radio*" | radio button
-**input** type="*checkbox*" | checkbox
-**input** type="*submit*" | send form
-**select** | drop-down list
-**option** | drop-down list item
-**optgroup** | group of drop-down list items
-**datalist** | autocompletion list
-**textarea** | large text input
-
+| الوسم | العنصر |
+| --- | --- |
+| **form** | form |
+| **label** | label for input |
+| **fieldset** | group inputs together |
+| **legend** | legend for fieldset |
+| **input** type="_text_" | text input |
+| **input** type="_password_" | password input |
+| **input** type="_radio_" | radio button |
+| **input** type="_checkbox_" | checkbox |
+| **input** type="_submit_" | send form |
+| **select** | drop-down list |
+| **option** | drop-down list item |
+| **optgroup** | group of drop-down list items |
+| **datalist** | autocompletion list |
+| **textarea** | large text input |
 
 ## أوسمة HTML5
 
@@ -388,14 +386,14 @@ Copyright notice
 </footer>
 ```
 
-الوسم | العنصر
---- | ---
-**header** | header of document or section
-**footer** | footer of document or section
-**section** | section
-**article** | article, forum post, blog post, comment
-**aside** | aside content related to surrounding content
-**nav** | navigation links
+| الوسم | العنصر |
+| --- | --- |
+| **header** | header of document or section |
+| **footer** | footer of document or section |
+| **section** | section |
+| **article** | article, forum post, blog post, comment |
+| **aside** | aside content related to surrounding content |
+| **nav** | navigation links |
 
 ### العناصر الجديدة
 
@@ -414,14 +412,15 @@ Downloading progress : <progress value="53" max="100"></progress>
 Disk space : <meter value="62" min="10" max="350"></meter>
 ```
 
-الوسم | العنصر
---- | ---
-**figure** | an illustration
-**figcaption** | caption of a figure العنصر
-**details** | details that can be shown or hidden
-**summary** | visible heading of a details العنصر
-**progress** | progress of a task
-**meter** | display a gauge
-**time** | machine-readable time indication
+| الوسم | العنصر |
+| --- | --- |
+| **figure** | an illustration |
+| **figcaption** | caption of a figure العنصر |
+| **details** | details that can be shown or hidden |
+| **summary** | visible heading of a details العنصر |
+| **progress** | progress of a task |
+| **meter** | display a gauge |
+| **time** | machine-readable time indication |
 
-</div>
+&lt;/div&gt;
+
