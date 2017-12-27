@@ -1,6 +1,4 @@
-# HTML بالعربي
-
-# مرجع مبسّط باللغة العربية للـ HTML. {#html}
+# مرجع مبسّط باللغة العربية للـ HTML
 
 ## فهرس المحتويات
 
@@ -422,5 +420,5 @@ Disk space : <meter value="62" min="10" max="350"></meter>
 | **meter** | display a gauge |
 | **time** | machine-readable time indication |
 
-&lt;/div&gt;
+
 
